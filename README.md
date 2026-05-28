@@ -2,7 +2,7 @@
 
 Opinionated skills for AI coding agents to create stunning diagrams and visualizations directly in Markdown. These skills extend agent capabilities across diagram generation, data visualization, and technical documentation.
 
-**14 skills** covering 5 rendering engines — from software modeling to enterprise architecture, data analytics, and editorial-quality content cards.
+**15 skills** covering 6 rendering engines — from software modeling to enterprise architecture, data analytics, and editorial-quality content cards.
 
 Skills follow the [Agent Skills](https://agentskills.io/) format.
 
@@ -47,7 +47,8 @@ Skills are automatically detected when placed in `.github/skills/` directory.
 
 | Category | Skill | Code Fence | Description | Best For |
 |----------|-------|------------|-------------|----------|
-| � Data Charts | [vega](vega/SKILL.md) | ` ```vega-lite ` / ` ```vega ` | Data-driven charts with Vega-Lite and Vega | Bar, line, scatter, heatmap, area charts, radar, word cloud |
+| 📊 Data Charts | [vega](vega/SKILL.md) | ` ```vega-lite ` / ` ```vega ` | Data-driven charts with Vega-Lite and Vega | Bar, line, scatter, heatmap, area charts, radar, word cloud |
+| 🔗 Graphs | [graphviz](graphviz/SKILL.md) | ` ```dot ` | Directed and undirected graphs with Graphviz DOT | Dependency trees, call graphs, package hierarchies, module relationships |
 | 📈 Infographic | [infographic](infographic/SKILL.md) | ` ```infographic ` | 70+ pre-designed templates with YAML syntax | KPI cards, timelines, roadmaps, SWOT, funnels, org trees |
 | 🎨 Mind Map | [canvas](canvas/SKILL.md) | ` ```canvas ` | Spatial node-based diagrams with JSON Canvas format | Mind maps, knowledge graphs, concept maps, planning boards |
 
@@ -57,8 +58,8 @@ These skills generate HTML/CSS directly embedded in Markdown (no code fence):
 
 | Category | Skill | Templates | Description | Best For |
 |----------|-------|-----------|-------------|----------|
-| 🏛️ Layered Architecture | [architecture](architecture/SKILL.md) | 13 layouts × 12 styles | Color-coded layer diagrams with grid-based component layout | System layers, microservices, enterprise apps |
-| 🃏 Info Cards | [infocard](infocard/SKILL.md) | 13 layouts × 14 styles | Editorial-style information cards with magazine-quality typography | Knowledge summaries, data highlights, event announcements |
+| 🏛️ Layered Architecture | [architecture](architecture/SKILL.md) | 13 layouts × 13 styles | Color-coded layer diagrams with grid-based component layout | System layers, microservices, enterprise apps |
+| 🃏 Info Cards | [infocard](infocard/SKILL.md) | 36 layouts × 29 styles | Editorial-style information cards with magazine-quality typography | Knowledge summaries, data highlights, event announcements |
 
 ### PlantUML-Based Skills
 
@@ -87,6 +88,7 @@ These skills use PlantUML as the diagram engine, with domain-specific mxgraph st
 | Class / object diagram | `uml` | Standard UML notation |
 | Component / deployment | `uml` | UML component and deployment views |
 | Dependency graph / module relations | `uml` | Package diagram with hierarchical layout |
+| Directed dependency tree / call graph | `graphviz` | DOT gives fine-grained graph layout and edge routing |
 | **Data Visualization** | | |
 | Bar / line / scatter chart | `vega` | Data-driven visualization |
 | Heatmap / multi-series | `vega` | Statistical analysis |
@@ -165,11 +167,12 @@ flowchart TD
     plantuml --> mindmap["🧠 mindmap<br/><small>Hierarchical brainstorming maps</small>"]
     
     standalone --> vega["📊 vega<br/><small>Data-driven charts</small>"]
+    standalone --> graphviz["🔗 graphviz<br/><small>DOT graphs and dependencies</small>"]
     standalone --> infographic["📈 infographic<br/><small>70+ YAML templates</small>"]
     standalone --> canvas["🎨 canvas<br/><small>JSON Canvas mind maps</small>"]
     
-    htmlcss --> architecture["🏛️ architecture<br/><small>12 styles × 13 layouts</small>"]
-    htmlcss --> infocard["🃏 infocard<br/><small>14 styles × 13 layouts</small>"]
+    htmlcss --> architecture["🏛️ architecture<br/><small>13 styles × 13 layouts</small>"]
+    htmlcss --> infocard["🃏 infocard<br/><small>29 styles × 36 layouts</small>"]
 ```
 
 ### SKILL.md Format
@@ -199,6 +202,7 @@ When the agent receives a request involving diagrams or visualizations:
 |-------|------------|---------------|
 | Vega-Lite | ` ```vega-lite ` | SVG/Canvas |
 | Vega | ` ```vega ` | SVG/Canvas |
+| Graphviz | ` ```dot ` | SVG |
 | Infographic | ` ```infographic ` | HTML |
 | Canvas | ` ```canvas ` | SVG |
 | UML | ` ```plantuml ` / ` ```puml ` | SVG |

@@ -67,6 +67,7 @@ Choose a visual style that matches your project's tone and audience. Each exampl
 | 10 | **Indigo Deep** | [styles/indigo-deep.md](styles/indigo-deep.md) | Brand-consistent systems, enterprise white papers, internal platforms |
 | 11 | **Pastel Mix** | [styles/pastel-mix.md](styles/pastel-mix.md) | SaaS products, startups, general tech architecture, product docs |
 | 12 | **Slate Dark** | [styles/slate-dark.md](styles/slate-dark.md) | Enterprise dark mode, internal tools, developer dashboards |
+| 13 | **Iss Red** | [styles/iss-red.md](styles/iss-red.md) | Red-themed enterprise diagrams, internal platforms, management systems |
 
 ## Layout Examples
 
