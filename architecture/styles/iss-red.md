@@ -1,4 +1,4 @@
-# Rose Bloom Style
+# Iss Red Style
 
 **Style**: Pink-rose-orchid elegant pastels, soft gradients, 8px radius, italic titles, refined femininity
 **Best for**: Fashion/beauty, luxury brands, wedding platforms, premium membership products
